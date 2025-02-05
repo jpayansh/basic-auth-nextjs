@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Authentication System
 
-## Getting Started
+A simple authentication system built with Next.js, featuring user sign-in, sign-up, email verification, and a profile page.
 
-First, run the development server:
+## Features
+- User Registration (Sign Up)
+- User Login (Sign In)
+- Email Verification using Nodemailer
+- Secure Authentication with JSON Web Tokens (JWT)
+- Password Hashing with bcryptjs
+- Profile Page with User Details
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- **Next.js** (15.1.3) - React Framework
+- **React** (19.0.0) - Frontend Library
+- **React-DOM** (19.0.0) - Rendering Library
+- **Axios** (1.7.9) - API Requests
+- **Mongoose** (8.9.2) - MongoDB ODM
+- **bcryptjs** (2.4.3) - Password Hashing
+- **jsonwebtoken** (9.0.2) - Authentication Tokens
+- **Nodemailer** (6.9.16) - Email Verification
+- **react-hot-toast** (2.4.1) - Notifications
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js installed
+- MongoDB database setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/jpayansh/basic-auth-nextjs.git
+   cd nextjs-auth
+   ```
 
-## Learn More
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. Run the development server:
+   ```sh
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
+1. Sign up with your email and password.
+2. Check your email for the verification link.
+3. Click the link to verify your email.
+4. Sign in and access your profile.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
+This project is licensed under the MIT License.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
